@@ -105,7 +105,7 @@ U:          factor U (2d array, n1xr)
 V:          factor V (2d array, rxn2)
     
 """
-def complete_matrix_GD(data, Omega, r, loss_fun=None, eps=10**(-8), maxiter=500, min_scale = 1):
+def complete_matrix_GD(data, Omega, r, loss_fun=None, eps=10**(-24), maxiter=3000, min_scale = 1):
     # Parse input
     n1, n2 = data.shape
     
