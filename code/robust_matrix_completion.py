@@ -34,7 +34,7 @@ U:          factor U (2d array, n1xr)
 V:          factor V (2d array, rxn2)
     
 """
-def complete_matrix(data, Omega, r, loss_fun=None, eps=10**(-4), maxiter=10):
+def complete_matrix(data, Omega, r, loss_fun=None, eps=10**(-8), maxiter=100):
     # Parse input
     n1, n2 = data.shape
     
